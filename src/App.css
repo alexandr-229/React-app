@@ -1,38 +1,156 @@
 .App {
-  text-align: center;
+    background-color: #d8d8d8;
+    height: 120vh;
+    padding: 24px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.InputWrap {
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    box-shadow: 3px 3px 12px 1px rgba(0, 0, 0, 0.25);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.Input {
+    color: #fff;
+    width: 80%;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    background-color: #3a8ac0;
+    border: none;
+    font-size: 18px;
+}
+
+.Btn {
+    width: 20%;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.Select {
+    margin-top: 24px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.CardList {
+    display: flex;
+}
+
+.Card {
+    cursor: pointer;
+    width: 180px;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: #3a8ac0;
+    font-style: 14px;
+    color: #fff;
+    margin-right: 24px;
+    box-shadow: 3px 3px 12px 1px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    display: block;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .Card:first-child {
+    margin-left: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .ActionButtonWrap {
+    display: flex;
+    justify-content: flex-end;
   }
+  
+  .DeleteCity{
+    background: #fff;
+    border: 1px solid black;
+  }
+
+.MainInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Titel {
+    font-size: 24px;
+    font-weight: 500;
+}
+  
+.Description {
+    font-size: 16px;
+}
+  
+.Temperature {
+    font-size: 40px;
+    font-weight: 500;
+}
+  
+.TemperatureIcon::after {
+    content: "˚";
+}
+  
+.Information {
+    margin-top: 12px;
+}
+  
+.Information > div {
+    margin-top: 4px;
+}
+
+.Error {
+    width: 100%;
+    height: 100vh;
+    background-color: #d8d8d8;
+    padding: 25px;
+}
+
+.ErrorCod {
+    color: red;
+    font-size: 40px;
+}
+
+.ErrorInfo {
+    color: red;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.SingleCard {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.DailyCards {
+    margin-top: 24px;
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .DailyCard {
+    background-color: #3a8ac0;
+    border-radius: 12px;
+    margin-left: 8px;
+    box-shadow: 3px 3px 12px 1px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 24px;
+    min-height: 270px;
+  }
+
+.GoBack {
+    text-decoration: none;
+    font-style: 28px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.GoBack:hover{
+    color: #3a8ac0;
 }
